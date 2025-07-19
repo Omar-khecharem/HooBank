@@ -66,18 +66,18 @@ const Hero = () => (
 
       <div
         className="absolute z-[0] right-0 
-      w-[40%] h-[35%] top-0  pink__gradient
+      w-[40%] h-[35%] top-0  md:pink__gradient
      
       "
       ></div>
       <div
         className="absolute z-[1] 
-      w-[80%] h-[80%] bottom-40 rounded-full   white__gradient 
+      w-[80%] h-[80%] bottom-40 rounded-full   md:white__gradient 
       "
       ></div>
       <div
         className="absolute z-[0] 
-      w-[50%] h-[50%] right-20  blue__gradient
+      w-[50%] h-[50%] right-20  md:blue__gradient
       "
       ></div>
 

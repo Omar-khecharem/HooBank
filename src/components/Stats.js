@@ -9,20 +9,20 @@ const Stats = () => (
     aria-label="Statistics"
   >
     {stats.map((stat, index) => {
-      // Extract numeric value for CountUp
+
       const numericValue = parseInt(stat.value.replace(/\D/g, ""), 10) || 0;
       const suffix = stat.value.replace(/[0-9]/g, "");
 
       return (
         <div
           key={stat.id}
-          className={`flex-1 flex md:flex-row flex-col justify-center items-center transition-transform duration-200 hover:scale-105 group`}
+          className={`flex-1 flex md:flex-row flex-col justify-center items-center transition-transform duration-200 hover:scale-105 p-5 group`}
         >
           <h4 className="font-poppins font-semibold text-4xl md:text-[50px] text-[30px] xs:leading-[53px] md:px-9 flex items-center">
             <CountUp end={numericValue} duration={1.5} />
             <span className="ml-1">{suffix}</span>
           </h4>
-          <p className="font-poppins font-normal xs:text-[30px] text-[15px] mx-4 leading-[21px] uppercase text-gradient md:text-lg text-nowrap">
+          <p className="font-poppins font-normal xs:text-[30px] text-[20px] p-2 mx-4 leading-[21px] uppercase text-gradient md:text-lg text-nowrap">
             {stat.title}
           </p>
         
