@@ -10,7 +10,7 @@ import {
   Testimonials,
   FeedbackCard,
   Clients,
-  CTA,
+
   Footer,
   Billing,
 } from "./components";

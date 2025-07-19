@@ -1,6 +1,4 @@
-import React from "react";
 import { clients } from "../constants";
-import styles from "../Style";
 
 const Clients = () => (
   <section className="">
