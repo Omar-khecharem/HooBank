@@ -16,6 +16,9 @@ import {
 } from "./components";
 
 function App() {
+  document.addEventListener("contextmenu",(e)=>{
+    e.preventDefault()
+  })
   return (
     <div className="bg-primary w-full overflow-hidden text-white">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
